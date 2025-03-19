@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classwork</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<header>
+    <p class="page-title">Welcome to The Organic Market
+        <img src="./images/logo.jpg" alt="logo">
+    </p>
+    
+    <nav>
+        <ul class="desktop-nav-items">
+            <li>
+        <a href="./index1.html" class="nav-item ">HOME</a></li>
+        <li>
+        <a href="./Organic-Spice.html" class="nav-item">ORGANIC SPICE</a></li>
+        <li>
+        <a href="./Organic-Tea.html" class="nav-item">ORGANIC TEA</a></li>
+        <li>
+        <a href="./Other-products.html" class="nav-item">OTHER PRODUCTS</a></li>
+        <li>
+        <a href="./Founder.html" class="nav-item">FOUNDER</a></li>
+        <li>
+        <a href="./Contact.html" class="nav-item active">CONTACT</a></li>
+        </ul>
+       
+        <ul class="sidebar">
+            <li><a href="./index1.html" class="nav-item ">HOME</a></li>
+            <li><a href="./Organic-Spice.html" class="nav-item">ORGANIC SPICE</a></li>
+            <li><a href="./Organic-Tea.html" class="nav-item">ORGANIC TEA</a></li>
+            <li><a href="./Other-products.html" class="nav-item">OTHER PRODUCTS</a></li>
+            <li><a href="./Founder.html" class="nav-item">FOUNDER</a></li>
+            <li> <a href="./Contact.html" class="nav-item">CONTACT</a></li>
+            
+
+         </ul>
+
+         </nav>
+         <div class="toggle-icon-container">
+
+            <img onclick=showSidebar()
+            src="./images/icons/hambugger.svg"
+            alt="hambugger"
+             class="icon open-icon">
+    
+            <img 
+             src="./images/icons/close.svg"
+              alt="hambugger" 
+              class="icon close-icon hide">
+    
+            </div>
+
+</header>
+<hr>
+<main>
+    <section>
+        
+        
+        <h1 class="section-title">Contact</h1>
+        
+        <div class="section-product">
+        <p>To get in touch with us, feel free to reach out via email at <br> <b> *[theorganicmarket26@gmail.com]* </b> <br> or connect with us on our social media handle <br> *<a href="https://www.tiktok.com/@theorganicmarket1?_t=ZM-8uoTigCCryA&_r=1"> TikTok</a>* <br> for the latest updates and promotions. <br> <br> For a more personal experience, visit our store at *Westfield* and explore our full range of products. We look forward to hearing from you and welcoming you to our store!
+
+         </p>
+        <figure>
+            <img src="./images/contact-logo.jpg" alt="info">
+        </figure>
+        </div>
+
+</section>
+</main>
+<body>
+
+    
+</body>
+<script>
+        let openIcon = document.querySelector(".open-icon")
+    let closeIcon = document.querySelector(".close-icon")
+    let menu = document.querySelector("menu")
+    let sidebar = document.querySelector(".sidebar")
+
+    openIcon.addEventListener("click", ()=>{
+        openIcon.classList.add("hide")
+        closeIcon.classList.remove("hide")
+        sidebar.style.display = "block";
+    
+        
+   })
+
+    closeIcon.addEventListener("click", ()=>{
+       openIcon.classList.remove("hide")
+        closeIcon.classList.add("hide")
+        sidebar.style.display = "none";
+    })
+
+    
+    </script>
+</html>

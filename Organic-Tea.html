@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classwork</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<header>
+    <p class="page-title">Welcome to The Organic Market
+        <img src="./images/logo.jpg" alt="logo">
+    </p>
+    
+    <nav>
+        <ul class="desktop-nav-items">
+            <li>
+        <a href="./index1.html" class="nav-item">HOME</a></li>
+        <li>
+        <a href="./Organic-Spice.html" class="nav-item">ORGANIC SPICE</a></li>
+        <li>
+        <a href="./Organic-Tea.html" class="nav-item active">ORGANIC TEA</a></li>
+        <li>
+        <a href="./Other-products.html" class="nav-item">OTHER PRODUCTS</a></li>
+        <li>
+        <a href="./Founder.html" class="nav-item">FOUNDER</a></li>
+        <li>
+        <a href="./Contact.html" class="nav-item">CONTACT</a></li>
+        </ul>
+       
+        <ul class="sidebar">
+            <li><a href="./index1.html" class="nav-item ">HOME</a></li>
+            <li><a href="./Organic-Spice.html" class="nav-item">ORGANIC SPICE</a></li>
+            <li><a href="./Organic-Tea.html" class="nav-item">ORGANIC TEA</a></li>
+            <li><a href="./Other-products.html" class="nav-item">OTHER PRODUCTS</a></li>
+            <li><a href="./Founder.html" class="nav-item">FOUNDER</a></li>
+            <li> <a href="./Contact.html" class="nav-item">CONTACT</a></li>
+            
+
+         </ul>
+
+         </nav>
+         <div class="toggle-icon-container">
+
+            <img onclick=showSidebar()
+            src="./images/icons/hambugger.svg"
+            alt="hambugger"
+             class="icon open-icon">
+    
+            <img 
+             src="./images/icons/close.svg"
+              alt="hambugger" 
+              class="icon close-icon hide">
+    
+            </div>
+
+</header>
+<hr>
+<main>
+    <section>
+        
+        <h1 class="section-title">Organic Teas</h1>
+        <p>
+            For our Organic Tea’s we target the work sector (cooperate institutions ) who are into enjoying locally made organic tea’s in their offices. 
+<br> <br>
+  
+
+We also consider the individual clients locally and abroad who are focused on consuming healthy and traditional remedied at home.  
+
+  <br> <br>
+
+We will tailor our marketing efforts towards health-conscious individuals who are seeking natural and organic options. These customers will prioritize sustainability and ethical sourcing practices, making our products a perfect fit for their lifestyle choices. 
+        </p>
+        <h3 class="section-title">Ginger Tea</h3>
+       
+        <div class="section-product">
+            <p>Experience the natural goodness of our Ginger Tea! Packed with powerful antioxidants and immune-boosting properties, it’s the perfect choice for a refreshing, soothing, and health-boosting drink. Whether you’re looking to unwind after a long day or enhance digestion, our Ginger Tea offers a flavorful and revitalizing experience in every cup. Sip your way to wellness today! <br>
+                <b>Price:D150</b>
+            </p>
+        <figure>
+            <img src="./images/ginger-tea.jpg" alt="ginger">
+        </figure>
+        </div>
+
+        <h3 class="section-title">Wonjo Tea</h3>
+        
+        <div class="section-product">
+        <p>Discover the vibrant taste of Wonjo Tea! Made from hibiscus petals, this refreshing drink is rich in vitamin C and antioxidants, perfect for boosting your immune system and promoting healthy skin. With its tangy, slightly floral flavor, Wonjo Tea is a delicious way to hydrate and relax, whether enjoyed hot or iced. Sip on wellness with every cup! <br>
+        <b>Price: D150</b> </p>
+        <figure>
+            <img src="./images/wonjo-tea.jpg" alt="wonjo-tea">
+        </figure>
+        </div>
+
+        <h3 class="section-title">Jamba katang Tea</h3>
+
+        <div class="section-product">
+        <p>Experience the vibrant, refreshing taste of Jamba Katang! This traditional herbal drink is known for its natural health benefits, including promoting digestion and boosting energy. With its unique blend of flavors, Jamba Katang offers a delightful and energizing way to hydrate throughout your day. Embrace the natural goodness and revitalizing properties of this energizing beverage – sip and feel the difference! <br> 
+        <b>Price:D150</b> </p>
+        <figure>
+            <img src="./images/jamba-katang.jpg" alt="jamba-katang">
+        </figure>
+        </div>
+
+        <h3 class="section-title">Mint Tea</h3>
+        <div class="section-product">
+        
+        <p>Refresh and rejuvenate with our Mint Tea! Naturally cooling and packed with soothing properties, it’s the perfect way to relax and promote digestion. Whether you're unwinding after a busy day or enjoying a moment of calm, our Mint Tea offers a crisp, invigorating flavor that energizes your senses. Enjoy a fresh start with every sip! <br>
+        <b>Price:D175</b> </p>
+        <figure>
+            <img src="./images/mint-tea.jpg" alt="Mint">
+        </figure>
+        </div>
+
+        <h3 class="section-title">Mbor Mbor Tea</h3>
+        <div class="section-product">
+        
+        <p>Indulge in the unique flavor of Mbor Mbor Tea! Known for its rich cultural roots and soothing properties, this herbal blend is a delightful way to support your overall wellness. Whether you're enjoying it for its calming effects or its ability to promote digestion, Mbor Mbor Tea offers a refreshing, natural experience in every sip. Sip and embrace the goodness of tradition! <br>
+        <b>Price:D150</b> </p>
+        <figure>
+            <img src="./images/Mbor Mbor.jpg" alt="Mbor">
+        </figure>
+        </div>
+
+
+</section>
+</main>
+<body>
+
+    
+</body>
+<script>
+        let openIcon = document.querySelector(".open-icon")
+    let closeIcon = document.querySelector(".close-icon")
+    let menu = document.querySelector("menu")
+    let sidebar = document.querySelector(".sidebar")
+
+    openIcon.addEventListener("click", ()=>{
+        openIcon.classList.add("hide")
+        closeIcon.classList.remove("hide")
+        sidebar.style.display = "block";
+    
+        
+   })
+
+    closeIcon.addEventListener("click", ()=>{
+       openIcon.classList.remove("hide")
+        closeIcon.classList.add("hide")
+        sidebar.style.display = "none";
+    })
+
+    
+    </script>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classwork</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<header>
+    <p class="page-title">Welcome to The Organic Market
+        <img src="./images/logo.jpg" alt="logo">
+    </p>
+    
+    <nav>
+        <ul class="desktop-nav-items">
+            <li>
+        <a href="./index1.html" class="nav-item ">HOME</a></li>
+        <li>
+        <a href="./Organic-Spice.html" class="nav-item">ORGANIC SPICE</a></li>
+        <li>
+        <a href="./Organic-Tea.html" class="nav-item">ORGANIC TEA</a></li>
+        <li>
+        <a href="./Other-products.html" class="nav-item active">OTHER PRODUCTS</a></li>
+        <li>
+        <a href="./Founder.html" class="nav-item">FOUNDER</a></li>
+        <li>
+        <a href="./Contact.html" class="nav-item">CONTACT</a></li>
+        </ul>
+       
+        <ul class="sidebar">
+            <li><a href="./index1.html" class="nav-item ">HOME</a></li>
+            <li><a href="./Organic-Spice.html" class="nav-item">ORGANIC SPICE</a></li>
+            <li><a href="./Organic-Tea.html" class="nav-item">ORGANIC TEA</a></li>
+            <li><a href="./Other-products.html" class="nav-item">OTHER PRODUCTS</a></li>
+            <li><a href="./Founder.html" class="nav-item">FOUNDER</a></li>
+            <li> <a href="./Contact.html" class="nav-item">CONTACT</a></li>
+            
+
+         </ul>
+
+         </nav>
+         <div class="toggle-icon-container">
+
+            <img onclick=showSidebar()
+            src="./images/icons/hambugger.svg"
+            alt="hambugger"
+             class="icon open-icon">
+    
+            <img 
+             src="./images/icons/close.svg"
+              alt="hambugger" 
+              class="icon close-icon hide">
+    
+            </div>
+
+</header>
+<hr>
+<main>
+    <section>
+        <div class="section-title">
+        <h1>Other Products</h1>
+        <h3>Moringa Powder and Tea</h3>
+        </div>
+        <div class="section-content">
+
+        <p>Boost your health with the power of Moringa! Whether you enjoy it as a revitalizing tea or as a nutrient-packed powder, Moringa is a powerhouse of vitamins, minerals, and antioxidants. Known for its ability to support energy, immunity, and overall wellness, Moringa is your perfect daily companion. Sip on Moringa Tea for a refreshing, detoxifying experience, or add the powder to your smoothies, soups, or meals for an easy nutritional boost. Elevate your wellness routine with Moringa today! </p>
+        <figure>
+            <img src="./images/moringa-tea and powder.jpg" alt="moringa">
+        </figure>
+        </div>
+
+        <h3 class="section-title">Other products</h3>
+
+        <div class="section-content">
+
+        <p>Add a burst of flavor to your kitchen with our premium selection of spices and spreads!  <br> <br>
+
+            Elevate your meals with our rich and creamy<b>*Peanut Butter*! </b>Made from the finest peanuts, this versatile paste adds a deliciously nutty flavor to sauces, stews, smoothies, and spreads. Packed with protein and healthy fats, it’s a wholesome addition to your kitchen, perfect for both savory and sweet dishes. Bring home the goodness of Groundnut Paste today and enhance every bite! <br> <br>
+            
+           <b> - *Pepper Flakes*:</b> Bring the heat with our Pepper Flakes! Perfect for spicing up pizzas, pastas, and more, these flakes add the perfect amount of kick to any dish. <br> <br>
+            
+            <b>- *Cinnamon Powder*:</b> Add warmth and sweetness with our Cinnamon Powder. Ideal for baking, beverages, or sprinkling on your favorite foods for a comforting, aromatic touch. <br> <br>
+            
+            <b>- *Curry Powder*:</b> Elevate your cooking with our Curry Powder. A perfect blend of spices to add depth and flavor to curries, soups, and roasted vegetables. <br> <br>
+            
+            Transform your meals and snacks with these flavorful, high-quality products – your taste buds will thank you! </p>
+        <figure>
+            <img src="./images/other-products.jpg" alt="others">
+        </figure>
+        </div>
+
+
+
+</section>
+</main>
+<body>
+
+    
+</body>
+<script>
+        let openIcon = document.querySelector(".open-icon")
+    let closeIcon = document.querySelector(".close-icon")
+    let menu = document.querySelector("menu")
+    let sidebar = document.querySelector(".sidebar")
+
+    openIcon.addEventListener("click", ()=>{
+        openIcon.classList.add("hide")
+        closeIcon.classList.remove("hide")
+        sidebar.style.display = "block";
+    
+        
+   })
+
+    closeIcon.addEventListener("click", ()=>{
+       openIcon.classList.remove("hide")
+        closeIcon.classList.add("hide")
+        sidebar.style.display = "none";
+    })
+
+    
+    </script>
+</html>

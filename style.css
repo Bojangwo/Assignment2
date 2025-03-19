@@ -1,0 +1,172 @@
+body {
+    background-color: rgb(46, 68, 46);
+    max-width: 1024px;
+    margin: auto;
+}
+
+header {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desktop-nav-items {
+    display: flex;
+    gap: 5px
+}
+
+.desktop-nav-items li{
+    list-style: none;
+}
+.nav-item { 
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+    font-size: 12px;
+}
+.active{
+    color:yellow;
+}
+.page-title{
+    font-size: 30px;
+    display:flex;
+    
+
+}
+.page-title img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+}
+main {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.section-title {
+    color: green;
+}
+.section-content {
+    display: flex;
+    gap: 40px;
+}
+
+.section-content p {
+    width: 50%
+    
+}
+img{
+    width: 350px;
+    /*height: 350px;*/
+    
+}
+
+.section-content figure {
+    width: 50%;
+    
+}
+.section-product{
+    display: flex;
+    gap: 40px;
+}
+
+.section-product p {
+    width: 50%;
+    
+    
+}
+/*.section-product {
+    width: 200px;
+    /*height: 350px;
+    
+}*/
+
+.section-product figure {
+    width: 50%;
+    img{
+        width:350px;
+    }
+}
+
+.icon{
+    width: 40px;
+}
+.hide{
+    display: none;
+}
+#active{
+    font-weight: bold;
+    color: yellow
+}
+.sidebar {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    height: 50vh;
+    width: 250px;
+    background-color: rgb(46, 68, 46);
+    display: none;
+
+    border-radius: 20px;
+    padding: 40px;
+}
+sidebar li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+ 
+
+/*  Basic responsive design */
+
+@media(max-width:950px){
+    body{
+        max-width: 700px;
+    }
+
+}
+@media(max-width: 950px){
+.desktop-nav-items{
+    display: none;
+}
+    body{
+        max-width: 90%;
+    }
+    .section-content{
+        display: block;
+    }
+    .section-content p {
+        width: 100%;
+    }
+    
+    .section-content img {
+        width: 100%;
+    }
+    .section-product{
+        display: block;
+    }
+    .section-product p{
+        width: 100%;
+
+    }
+    .section-product figure{
+        width: 100%
+        
+    }
+    .page-title {
+        font-size: 20px;
+    }
+    
+}
+@media(min-width: 950px){
+    .icon{
+        display: none;
+    }
+}
+
+
+
+

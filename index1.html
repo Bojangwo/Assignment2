@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classwork</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header>
+    <p    class="page-title">Welcome to The Organic Market
+        <img src="./images/logo.jpg" alt="logo">
+    </p>
+    
+    <nav>
+        <ul class="desktop-nav-items">
+            <li>
+        <a href="./index1.html" class="nav-item active">HOME</a></li>
+        <li>
+        <a href="./Organic-Spice.html" class="nav-item">ORGANIC SPICE</a></li>
+        <li>
+        <a href="./Organic-Tea.html" class="nav-item">ORGANIC TEA</a></li>
+        <li>
+        <a href="./Other-products.html" class="nav-item">OTHER PRODUCTS</a></li>
+        <li>
+        <a href="./Founder.html" class="nav-item">FOUNDER</a></li>
+        <li>
+        <a href="./Contact.html" class="nav-item">CONTACT</a></li>
+        </ul>
+       
+        <ul class="sidebar">
+            <li><a href="./index1.html" class="nav-item ">HOME</a></li>
+            <li><a href="./Organic-Spice.html" class="nav-item">ORGANIC SPICE</a></li>
+            <li><a href="./Organic-Tea.html" class="nav-item">ORGANIC TEA</a></li>
+            <li><a href="./Other-products.html" class="nav-item">OTHER PRODUCTS</a></li>
+            <li><a href="./Founder.html" class="nav-item">FOUNDER</a></li>
+            <li> <a href="./Contact.html" class="nav-item">CONTACT</a></li>
+            
+
+         </ul>
+         </nav>
+    
+    
+    <div class="toggle-icon-container">
+
+        <img onclick=showSidebar()
+        src="./images/icons/hambugger.svg"
+        alt="hambugger"
+         class="icon open-icon">
+
+        <img 
+         src="./images/icons/close.svg"
+          alt="hambugger" 
+          class="icon close-icon hide">
+
+        </div>
+</header>
+<hr>
+<main>
+    <section>
+        <div class="section-title">
+        <h1>Boutique</h1>
+        <h2>The Organic Market</h2>
+        </div>
+        <div class="section-content">
+            <p>
+                Industry Analysis section of business plan: <br>
+                <br>
+
+  
+
+The organic & spice industry in The Gambia is thriving, with a market size estimated to be worth millions of dalasis each year. The demand for organic products and spices in the region has been steadily increasing due to a growing interest in traditional and the health benefits associated with using natural herbs and spices. With a population that values flavorful, organic and aromatic delights, the organic and spice industry continues to experience significant growth. <br> <br>
+
+  
+
+Market analysts project a promising future for the Organic & Spice industry in The Gambia, with an expected market growth of at least 5% annually over the next few years. This anticipated growth is driven by factors such as an expanding middle class, increased disposable income, and a growing awareness of the benefits of using locally sourced Organic Tea’s and spices. As more consumers seek high-quality, organic, and sustainably sourced products, there is a growing opportunity for businesses like THE ORGANIC MARKET to capitalize on the market potential. 
+<br> <br> 
+  
+
+The trends in the Organic and spice industry, such as the rising popularity of exotic seasonings, unique flavor combinations, and ready-to-use spice blends, are favorable for THE ORGANIC MARKET as it looks to establish itself as a key player in the Gambian market. With a focus on supplying premium quality, locally made Tea’s and Organic spices, THE ORGANIC MARKET is well-positioned to meet the demands of discerning consumers who are looking for authentic and flavorful ingredients. By staying ahead of industry trends and maintaining a commitment to quality, THE ORGANIC MARKET can seize the opportunities presented by the growing trend of Organic Tea’s and spice in The Gambian market. 
+            </p>
+
+            
+        <figure>
+            <img src="./images/boutique.jpg" alt="boutique">
+        </figure>
+        </div>
+
+</section>
+</main>
+</body>
+
+    <script>
+        let openIcon = document.querySelector(".open-icon")
+    let closeIcon = document.querySelector(".close-icon")
+    let menu = document.querySelector("menu")
+    let sidebar = document.querySelector(".sidebar")
+
+    openIcon.addEventListener("click", ()=>{
+        openIcon.classList.add("hide")
+        closeIcon.classList.remove("hide")
+        sidebar.style.display = "block";
+    
+        
+   })
+
+    closeIcon.addEventListener("click", ()=>{
+       openIcon.classList.remove("hide")
+        closeIcon.classList.add("hide")
+        sidebar.style.display = "none";
+    })
+
+    
+    </script>
+
+</html>
